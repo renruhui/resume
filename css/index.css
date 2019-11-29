@@ -1,0 +1,558 @@
+.section1{
+    background: url(../images/section1.jpg) no-repeat center center;
+}
+.section2{
+    background: url(../images/section2.jpg) no-repeat center center;
+}
+.section3{
+    background: url(../images/section3.jpg) no-repeat center center;
+}
+.section4{
+    /*background: url(../images/section4.jpg) no-repeat center center;*/
+}
+.section{
+    background-size: cover;
+    /*filter:alpha(opacity=60);*/
+    -moz-opacity:0.7;
+    /*-khtml-opacity: 0.5;*/
+    opacity: 0.7;
+}
+.section.section3{
+    -moz-opacity:1;
+    /*-khtml-opacity: 0.5;*/
+    opacity: 1;
+}
+.section.section4:before{
+     background: url(../images/section4.jpg) no-repeat center center;
+     background-size: cover;
+     width: 100%;
+     height: 100%;
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: -1;/*-1 可以当背景*/
+     -webkit-filter: blur(1.5px);
+     filter: blur(1.5px);
+ }
+.img-responsive{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+/*----------------------------------nav------------------------------*/
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2999;
+    width: 100%;
+    background: rgba(0,0,0,0.36);
+}
+nav ul{
+    width: 1200px;
+    margin: 0 auto;
+}
+nav ul li{
+    width: 128px;
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: none;
+    margin-left: 10px;
+    transition:1s ;
+}
+nav ul li:nth-of-type(1){
+    width: 150px;
+    height: 60px;
+    margin-right: 450px;
+}
+nav ul li:nth-of-type(1) img{
+    display: block;
+    width: 100%;
+}
+nav ul li:nth-of-type(5){
+    margin-right: 0;
+}
+nav ul li a{
+    font-size: 20px;
+    color: white;
+}
+nav ul li.active{
+    margin-top:10px ;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.36);
+}
+/*----------------------------------nav end------------------------------*/
+
+/*----------------------------------section1------------------------------*/
+.section1 .mySelf{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    width: 1200px;
+    height: 600px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    /*margin: 150px 0 0 300px;*/
+    background: rgba(255, 255, 255, .45);
+}
+.section1 .selfPhoto{
+    position: relative;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin: 90px auto 0;
+}
+.section1 .bg {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: pulse 5s infinite;
+}
+.section1 .selfPhoto img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.section1 .career{
+    font-size: 20px;
+    line-height: 35px;
+    margin: 30px auto 0;
+}
+.section1 .hr-line-div {
+    margin: 0 auto;
+    height: 2px;
+    width: 300px;
+    background: radial-gradient(#473125 24%, white 100%);
+}
+.section1 .aboutSelf{
+    text-align: center;
+}
+.section1 .aboutSelf .nameSelf{
+    width: 200px;
+    height: 80px;
+    margin:20px auto;
+}
+.section1 .aboutSelf .nameSelf img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.section1 .squareBorder{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:180px;
+    height:180px;
+    border-color: #473125;
+    /*opacity: 0;*/
+    transition: 1s;
+    animation-delay:.3s;
+    -webkit-animation-delay:.3s; /* Safari 和 Chrome */
+    /*animation: squareBorder 3s  forwards;*/
+}
+.section1 .borderFrame1{
+    border-top:12px solid;
+    border-left:12px solid;
+    animation: borderFrame1 1s forwards;
+}
+.section1 .borderFrame2{
+    border-top:12px solid;
+    border-right:12px solid;
+    /*transform: translate(-50%, -50%);*/
+    animation: borderFrame2 1s forwards;
+}
+.section1 .borderFrame3{
+    border-bottom:12px solid;
+    border-left:12px solid;
+    /*transform: translate(-313%, -50%);*/
+    animation: borderFrame3 1s forwards;
+}
+.section1 .borderFrame4{
+    border-bottom:12px solid;
+    border-right:12px solid;
+    /*transform: translate(-50%, -50%);*/
+    animation: borderFrame4 1s forwards;
+}
+.section1 .bigSquare{
+    position: absolute;
+    top:40%;
+    left:50%;
+    width: 400px;
+    height: 150px;
+    transform: translate(-50%, -50%);
+    border:1px solid rgba(255, 255, 255, .5);
+    animation: bigSquare 1.5s forwards;
+}
+
+/* 头像动画 begin */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 12px 12px #fff;
+    }
+    50% {
+        box-shadow: 0 0 12px 12px #473125;
+    }
+    100% {
+        box-shadow: 0 0 12px 12px #fff;
+    }
+}
+@-webkit-keyframes pulse {
+    0% {
+        box-shadow: 0 0 12px 12px #fff;
+    }
+    50% {
+        box-shadow: 0 0 12px 12px #473125;
+    }
+    100% {
+        box-shadow: 0 0 12px 12px #fff;
+    }
+}
+/* 头像动画 end */
+/* 边框动画 begin */
+@keyframes squareBorder {
+    0% {
+        /*transform: translate(-50%, -50%);*/
+        opacity: .2;
+    }
+    50% {
+        /*transform: translate(-50%, -50%);*/
+        opacity: .6;
+    }
+    100% {
+        /*transform: translate(-50%, -50%);*/
+        opacity: 1;
+    }
+}
+@keyframes borderFrame1{
+    from {
+        transform: translate(-50%, -50%);
+    }
+    to {
+        transform: translate(-313%, -156%);
+    }
+}
+@keyframes borderFrame2{
+    from {
+        transform: translate(-50%, -50%);
+    }
+    to {
+        transform: translate(213%, -157%);
+    }
+}
+@keyframes borderFrame3{
+    from {
+        transform: translate(-50%, -50%);
+    }
+    to {
+        transform: translate(-313%, 57%);
+    }
+}
+@keyframes borderFrame4{
+    from {
+        transform: translate(-50%, -50%);
+    }
+    to {
+        transform: translate(213%, 57%);
+    }
+}
+@keyframes bigSquare{
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(8);
+    }
+}
+/* 边框动画 end */
+/*----------------------------------section1 end------------------------------*/
+
+/*----------------------------------section2------------------------------*/
+.stillTitle{
+    float:left;
+    width: 200px;
+}
+.htmleaf-container{
+    float:left;
+    width: 800px;
+}
+.section2 .mySelf{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    width: 1200px;
+    height: 600px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    /*margin: 150px 0 0 300px;*/
+    background: rgba(255, 255, 255, .45);
+}
+.section2 .stillTitle{
+    width: 60px;
+    font-size: 30px;
+    color: #3b2618!important;
+    padding: 0 80px;
+    font-weight: bold;
+    font-family: "宋体", "simsun", 'HanHei SC', 'Helvetica Neue', 'Helvetica', 'Lantinghei SC', 'Hiragino Sans GB', 'STXihei', '华文细黑', 'Microsoft Sans Serif', 'WenQuanYi Micro Hei';
+    margin-top:40px;
+}
+.section2 .stillTitle:before{
+     content: '';
+     display: block;
+     width: 20px;
+     height: 65px;
+     border-top: 3px solid #473125;
+     border-left: 3px solid #473125;
+ }
+.section2 .stillTitle:after{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 90px;
+    border-right: 3px solid #473125;
+    border-bottom: 3px solid #473125;
+    float:right;
+}
+.circles{
+    float:left;
+    width: 200px;
+}
+.circle {
+    margin: 63px 6px 20px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    line-height: 1.2;
+}
+.circle canvas {
+    vertical-align: top;
+}
+.circle strong {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 90px;
+    font-size: 30px;
+}
+.circle strong i {
+    font-style: normal;
+    font-size: 0.6em;
+    font-weight: normal;
+}
+
+.circle span {
+    display: block;
+    color: #000;
+    margin-top: 20px;
+    line-height: 26px;
+    font-size: 18px;
+}
+.circle span:after{
+    content: '';
+    display: block;
+    width: 15px;
+    height: 5px;
+    background:#473125;
+}
+.circle span:before{
+    content: '';
+    display: block;
+    width: 15px;
+    height: 5px;
+    background:#473125;
+    float:left;
+    padding-left: 30px;
+}
+/*----------------------------------section2 end------------------------------*/
+
+/*----------------------------------section3------------------------------*/
+.section3 .scrollImg{
+    width: 650px;
+    height: 400px;
+    overflow: hidden;
+    margin: 90px 0 0 110px;
+}
+.section3 .scrollPage{
+    position:absolute;
+    bottom:45px;
+    right: 140px;
+    width: 500px;
+    height: 220px;
+    margin: 100px 0 0 100px;
+}
+.section3 .controlBtn{
+    position:relative;
+    position:absolute;
+    left: 630px;
+    bottom: 85px;
+    width: 130px;
+    height: 80px;
+}
+.section3 .swiper-slide{
+    background:none!important;
+}
+.section3 .aboutProgram{
+    width: 100%;
+    height: 100%;
+    color: #133247;
+}
+.section3 .scrollImg .swiper-container{
+    width: auto;
+    height: auto;
+}
+.section3 .scrollImg .swiper-container .swiper-slide:first-of-type img:hover{
+    transform: translateY(-545px);
+    transition: 3s;
+}
+.section3 .scrollImg .swiper-container .swiper-slide:nth-of-type(2) img:hover{
+    transform: translateY(-545px);
+    transition: 3s;
+}
+.section3 .scrollImg .swiper-container .swiper-slide:nth-of-type(3):hover img{
+    transform: translateY(-1400px);
+    transition: 6s;
+}
+.section3 .scrollImg .swiper-container .swiper-slide:nth-of-type(4):hover img{
+    transform: translateY(-2700px);
+    transition: 10s;
+}
+.section3 .scrollImg .swiper-container .swiper-slide:nth-of-type(5):hover img{
+    transform: translateY(-1900px);
+    transition: 10s;
+}
+.section3 .aboutProgram h2{
+    margin-bottom: 20px;
+}
+.section3 .aboutProgram h2 a{
+    display: block;
+    font-size:18px;
+    font-weight:bold;
+    text-align:center;
+    color:#11212e!important;
+}
+.section3 .aboutProgram p{
+    text-align:left;
+    font-family:"黑体";
+    line-height: 28px;
+}
+.section3 .aboutProgram p strong{
+    font-weight: bold;
+    color: #161a37;
+}
+.section3 .slideBorder{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+}
+.section3 .topLeftBorder{
+    top: 50px;
+    left: 70px;
+    border-top: 8px solid #1f475f;
+    border-left: 8px solid #1f475f;
+}
+.section3 .bottomRightBorder{
+    bottom: 225px;
+    left: 710px;
+    border-bottom: 8px solid #1f475f;
+    border-right: 8px solid #1f475f;
+}
+.section3 .topRightBorder{
+    top: 50px;
+    left: 710px;
+    border-top: 8px solid #1f475f;
+    border-right: 8px solid #1f475f;
+}
+.section3 .bottomLeftBorder{
+    bottom: 225px;
+    left: 70px;
+    border-bottom: 8px solid #1f475f;
+    border-left: 8px solid #1f475f;
+}
+.swiperBtn{
+    width: 56px!important;
+    height: 65px!important;
+}
+.swiperBtn img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after{
+   display: none!important;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    display: none!important;
+}
+.swiperBtn.swiper-button-prev{
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -moz-transform: rotate(90deg); /* Firefox */
+    -webkit-transform: rotate(90deg); /* Safari and Chrome */
+    -o-transform: rotate(90deg); /* Opera */
+}
+.swiperBtn.swiper-button-next{
+    margin-right: -30px;
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -moz-transform: rotate(-90deg); /* Firefox */
+    -webkit-transform: rotate(-90deg); /* Safari and Chrome */
+    -o-transform: rotate(-90deg); /* Opera */
+}
+/*----------------------------------section3 end------------------------------*/
+
+/*----------------------------------section4------------------------------*/
+.section4 .callContent{
+    position:absolute;
+    top: 22%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+}
+.section4 h1{
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    margin: 230px 0 30px;
+}
+.section4 .callContent .contactWay{
+    line-height: 40px;
+    font-size: 18px;
+    font-family: '宋体';
+    font-weight:bold;
+}
+.section4 .callContent .contactWay h3{
+    display:inline-block;
+    font-size: 20px;
+    font-family: '黑体';
+    font-weight: bold;
+}
+.section4 .borderSolid{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+}
+.section4 .borderSolid.borderSolidTop{
+    top: 100px;
+    left: 445px;
+    border-top: 3px solid #442f1b;
+    border-left: 3px solid #442f1b;
+}
+.section4 .borderSolid.borderSolidBottom{
+    bottom: 315px;
+    right: 555px;
+    border-bottom: 3px solid #442f1b;
+    border-right: 3px solid #442f1b;
+}
+/*----------------------------------section4 end------------------------------*/
